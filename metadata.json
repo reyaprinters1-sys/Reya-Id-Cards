@@ -1,0 +1,7 @@
+{
+  "name": "Reya ID Cards",
+  "description": "REYA ID CARDS: ஐடி கார்டு தயாரிப்பு & டீலர் நெட்வொர்க் முழு மேலாண்மை ஆப்",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

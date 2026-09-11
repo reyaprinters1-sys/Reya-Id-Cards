@@ -1,0 +1,118 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Dark rounded background with glow -->
+    <path
+        android:pathData="M20,10 L100,10 A16,16 0 0 1 116,26 L116,94 A16,16 0 0 1 100,110 L20,110 A16,16 0 0 1 4,94 L4,26 A16,16 0 0 1 20,10 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="0"
+                android:startY="0"
+                android:endX="120"
+                android:endY="120">
+                <item android:offset="0.0" android:color="#FF0B0F19" />
+                <item android:offset="1.0" android:color="#FF1E1B4B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Glowing Outer Circuit Border -->
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#38BDF8"
+        android:strokeAlpha="0.4"
+        android:fillColor="#00000000"
+        android:pathData="M22,12 L98,12 A14,14 0 0 1 112,26 L112,94 A14,14 0 0 1 98,108 L22,108 A14,14 0 0 1 8,94 L8,26 A14,14 0 0 1 22,12 Z" />
+
+    <!-- Stylized Neon Letter 'R' - Stem & Curve Outer -->
+    <path
+        android:pathData="M38,28 L64,28 C74,28 82,34 82,45 C82,54 75,60 66,62 L82,88 L70,88 L56,64 L48,64 L48,88 L38,88 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="38"
+                android:startY="28"
+                android:endX="82"
+                android:endY="88">
+                <item android:offset="0.0" android:color="#FFF43F5E" />
+                <item android:offset="0.35" android:color="#FF8B5CF6" />
+                <item android:offset="0.7" android:color="#FF06B6D4" />
+                <item android:offset="1.0" android:color="#FFF59E0B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Stylized Neon Letter 'R' - Inner Hollow -->
+    <path
+        android:fillColor="#FF0F172A"
+        android:pathData="M48,36 L62,36 C68,36 72,39.5 72,45 C72,50.5 68,54 62,54 L48,54 Z" />
+
+    <!-- High-tech Circuit Trace Details inside 'R' -->
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#38BDF8"
+        android:fillColor="#00000000"
+        android:pathData="M52,45 L62,45" />
+
+    <path
+        android:strokeWidth="1.5"
+        android:strokeColor="#F43F5E"
+        android:fillColor="#00000000"
+        android:pathData="M34,24 L44,24 L44,36" />
+
+    <!-- Circuit Connector Pins on the Right -->
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M84,38 L92,38 L92,40 L84,40 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M84,44 L92,44 L92,46 L84,46 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M84,50 L92,50 L92,52 L84,52 Z" />
+
+    <!-- Circuit Node Dots -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M94,39 A2,2 0 1 0 94,39.1 Z" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M94,45 A2,2 0 1 0 94,45.1 Z" />
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M94,51 A2,2 0 1 0 94,51.1 Z" />
+    <path
+        android:fillColor="#F43F5E"
+        android:pathData="M44,24 A2,2 0 1 0 44,24.1 Z" />
+    <path
+        android:fillColor="#10B981"
+        android:pathData="M56,76 A2.5,2.5 0 1 0 56,76.1 Z" />
+
+    <!-- Glowing Accent Ribbon on Leg -->
+    <path
+        android:strokeWidth="2.5"
+        android:strokeColor="#06B6D4"
+        android:fillColor="#00000000"
+        android:pathData="M50,68 L68,90" />
+
+    <!-- Brand Typography Subtext Bar 'REYA' -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M32,96 L88,96 L88,98 L32,98 Z" />
+
+    <!-- Subtle ID CARDS dots -->
+    <path
+        android:fillColor="#38BDF8"
+        android:pathData="M36,102 A1.5,1.5 0 1 0 36,102.1 Z" />
+    <path
+        android:fillColor="#F43F5E"
+        android:pathData="M60,102 A1.5,1.5 0 1 0 60,102.1 Z" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M84,102 A1.5,1.5 0 1 0 84,102.1 Z" />
+</vector>
