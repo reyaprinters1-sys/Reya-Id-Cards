@@ -25,24 +25,18 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
       with:
-        gradle-version: '8.7'
+        gradle-version: 8.9
 
-    - name: Build Android Debug APK
+    - name: Generate Wrapper Executables
       run: |
-        # Check if project files are inside subfolder or root
-        if [ -f "Reya-Id-Cards-main/build.gradle.kts" ]; then
-          cd Reya-Id-Cards-main
-        fi
-        
-        # Ensure wrapper is generated for this project
-        gradle wrapper --gradle-version 8.7 --distribution-type bin
+        gradle wrapper
         chmod +x gradlew
-        
-        # Build the debug APK directly
-        ./gradlew assembleDebug --no-daemon --stacktrace
+
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug --no-daemon --stacktrace
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
         name: Reya-Id-Cards-APK
-        path: "**/app/build/outputs/apk/debug/*.apk"
+        path: app/build/outputs/apk/debug/*.apk
