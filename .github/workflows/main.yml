@@ -25,16 +25,15 @@ jobs:
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v3
       with:
-        gradle-version: '8.7'
+        gradle-version: 8.7
 
     - name: Build Debug APK
       run: |
-        if [ -f "build.gradle.kts" ] || [ -f "build.gradle" ]; then
-          gradle assembleDebug --no-daemon --stacktrace
-        elif [ -d "Reya-Id-Cards-main" ]; then
-          cd Reya-Id-Cards-main
-          gradle assembleDebug --no-daemon --stacktrace
-        fi
+        gradle assembleDebug --no-daemon --stacktrace \
+          -Dcom.android.build.gradle.overrideVersionCheck=true \
+          -Pandroid.useAndroidX=true
+      env:
+        JAVA_OPTS: "-Dcom.android.build.gradle.overrideVersionCheck=true"
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
